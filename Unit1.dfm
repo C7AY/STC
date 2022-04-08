@@ -1,6 +1,6 @@
 object Form1: TForm1
-  Left = 538
-  Top = 170
+  Left = 691
+  Top = 366
   BorderIcons = [biSystemMenu]
   BorderStyle = bsDialog
   Caption = #1056#1072#1089#1089#1095#1077#1090' '#1082#1086#1084#1080#1089#1089#1080#1080' '#1080' '#1074#1099#1075#1086#1076#1099' Steam/Market'
@@ -144,6 +144,7 @@ object Form1: TForm1
     Height = 25
     Caption = '1'
     TabOrder = 0
+    TabStop = False
     Visible = False
     OnClick = Button1Click
   end
@@ -154,6 +155,7 @@ object Form1: TForm1
     Height = 25
     Caption = '2'
     TabOrder = 1
+    TabStop = False
     Visible = False
     OnClick = Button2Click
   end
@@ -173,6 +175,7 @@ object Form1: TForm1
     Top = 32
     Width = 161
     Height = 33
+    TabStop = False
     AutoSize = False
     ReadOnly = True
     TabOrder = 3
@@ -182,6 +185,7 @@ object Form1: TForm1
     Top = 88
     Width = 161
     Height = 33
+    TabStop = False
     AutoSize = False
     ReadOnly = True
     TabOrder = 4
@@ -191,6 +195,7 @@ object Form1: TForm1
     Top = 160
     Width = 161
     Height = 33
+    TabStop = False
     AutoSize = False
     ReadOnly = True
     TabOrder = 5
@@ -200,6 +205,7 @@ object Form1: TForm1
     Top = 216
     Width = 161
     Height = 33
+    TabStop = False
     AutoSize = False
     ParentShowHint = False
     ReadOnly = True
@@ -230,6 +236,7 @@ object Form1: TForm1
     Font.Style = []
     ParentFont = False
     TabOrder = 8
+    TabStop = False
     OnClick = Button3Click
   end
   object Button4: TButton
@@ -245,6 +252,7 @@ object Form1: TForm1
     Font.Style = []
     ParentFont = False
     TabOrder = 9
+    TabStop = False
     OnClick = Button4Click
   end
   object Button5: TButton
@@ -260,6 +268,7 @@ object Form1: TForm1
     Font.Style = []
     ParentFont = False
     TabOrder = 10
+    TabStop = False
     OnClick = Button5Click
   end
   object Button6: TButton
@@ -275,6 +284,7 @@ object Form1: TForm1
     Font.Style = []
     ParentFont = False
     TabOrder = 11
+    TabStop = False
     OnClick = Button6Click
   end
   object Edit7: TEdit
@@ -282,6 +292,7 @@ object Form1: TForm1
     Top = 64
     Width = 185
     Height = 33
+    TabStop = False
     AutoSize = False
     ReadOnly = True
     TabOrder = 12
@@ -292,6 +303,7 @@ object Form1: TForm1
     Top = 192
     Width = 185
     Height = 33
+    TabStop = False
     AutoSize = False
     ReadOnly = True
     TabOrder = 13
@@ -304,6 +316,7 @@ object Form1: TForm1
     Height = 33
     Caption = #1056#1072#1089#1089#1095#1077#1090' '#1074#1099#1075#1086#1076#1099
     TabOrder = 14
+    TabStop = False
     OnClick = Button7Click
   end
 end
