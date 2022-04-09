@@ -4,7 +4,7 @@ interface
 
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs,shellapi, StdCtrls;
+  Dialogs,shellapi, StdCtrls, Buttons;
 
 type
   TForm1 = class(TForm)
@@ -22,27 +22,29 @@ type
     Label4: TLabel;
     Label5: TLabel;
     Label6: TLabel;
-    Button3: TButton;
-    Button4: TButton;
-    Button5: TButton;
-    Button6: TButton;
     Edit7: TEdit;
     Label7: TLabel;
     Label8: TLabel;
     Edit8: TEdit;
     Button7: TButton;
     Label9: TLabel;
+    BitBtn1: TBitBtn;
+    BitBtn2: TBitBtn;
+    BitBtn3: TBitBtn;
+    BitBtn4: TBitBtn;
+    Help: TButton;
 
     procedure Button1Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
-    procedure Button3Click(Sender: TObject);
-    procedure Button4Click(Sender: TObject);
-    procedure Button5Click(Sender: TObject);
-    procedure Button6Click(Sender: TObject);
     procedure Button7Click(Sender: TObject);
     procedure Edit6KeyPress(Sender: TObject; var Key: Char);
     procedure Edit1KeyPress(Sender: TObject; var Key: Char);
     procedure FormKeyPress(Sender: TObject; var Key: Char);
+    procedure BitBtn2Click(Sender: TObject);
+    procedure BitBtn1Click(Sender: TObject);
+    procedure BitBtn3Click(Sender: TObject);
+    procedure BitBtn4Click(Sender: TObject);
+    procedure HelpClick(Sender: TObject);
 
   private
     { Private declarations }
@@ -56,6 +58,8 @@ var
 
 
 implementation
+
+uses Unit2;
 
 {$R *.dfm}
 
@@ -93,25 +97,6 @@ Edit5.text:=floattostr(r);
 
 end;
 
-procedure TForm1.Button3Click(Sender: TObject);
-begin
-ShellExecute(Handle, 'open', 'https://steamcommunity.com/market/search?appid=570', nil, nil, SW_SHOW);
-end;
-
-procedure TForm1.Button4Click(Sender: TObject);
-begin
-ShellExecute(Handle, 'open', 'https://market.dota2.net/', nil, nil, SW_SHOW);
-end;
-
-procedure TForm1.Button5Click(Sender: TObject);
-begin
-ShellExecute(Handle, 'open', 'https://steamcommunity.com/market/search?appid=730', nil, nil, SW_SHOW);
-end;
-
-procedure TForm1.Button6Click(Sender: TObject);
-begin
-ShellExecute(Handle, 'open', 'https://market.csgo.com/', nil, nil, SW_SHOW);
-end;
 
 procedure TForm1.Button7Click(Sender: TObject);
 begin
@@ -168,6 +153,31 @@ end;
 procedure TForm1.FormKeyPress(Sender: TObject; var Key: Char);
 begin
 if key =#13 then Button7.Click;            // фокус покус enter выполняет нажатие на but7
+end;
+
+procedure TForm1.BitBtn2Click(Sender: TObject);
+begin
+ShellExecute(Handle, 'open', 'https://steamcommunity.com/market/search?appid=730', nil, nil, SW_SHOW);
+end;
+
+procedure TForm1.BitBtn1Click(Sender: TObject);
+begin
+ShellExecute(Handle, 'open', 'https://steamcommunity.com/market/search?appid=570', nil, nil, SW_SHOW);
+end;
+
+procedure TForm1.BitBtn3Click(Sender: TObject);
+begin
+ShellExecute(Handle, 'open', 'https://market.dota2.net/', nil, nil, SW_SHOW);
+end;
+
+procedure TForm1.BitBtn4Click(Sender: TObject);
+begin
+ShellExecute(Handle, 'open', 'https://market.csgo.com/', nil, nil, SW_SHOW);
+end;
+
+procedure TForm1.HelpClick(Sender: TObject);
+begin
+form2.Show;
 end;
 
 end.
